@@ -20,6 +20,6 @@ Ensure version numbers in ``setup.py`` and ``doc/qr.1`` have been updated.
     gpg --detach-sign -a dist/*.gz
     gpg --detach-sign -a dist/*.whl
 
-5. Upload it::
+5. Upload it to TestPyPi::
 
-    twine upload dist/*
+    twine upload --repository-url https://test/pypi.org/legacy/ dist/*
